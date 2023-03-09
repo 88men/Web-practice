@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#side_bar{
+    background-color: tomato;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    box-shadow: 0 0 5px black;
+    z-index: 15;
+}
+
+#main{
+    background-color: aqua;
+    min-height: 1000px;
+    margin-left: 300px;
+}
+
+/* Menu Styles */
+header{
+    background-color: tomato;
+    box-shadow: 0 0 5px black;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+#site_menu{
+    color: white;
+}
+#site_menu > li{
+    display: inline-block;
+    position: relative;
+}
+
+#site_menu > li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+#site_menu > li a:hover{
+    color: black;
+    background-color: white; 
+}
+
+.sub_menu{
+    position: absolute;
+    background-color: tomato;
+    display: none;
+}
+.sub_menu > li{
+    display: block;
+}
+
+.sub_menu > li a{
+    padding: 5px 10px !important;
+}
+
+#site_menu > li:hover > .sub_menu{
+    display: block;
+}
+/* input:checked ~ .sub_menu{
+    display: block;
+} */
+
+/* Banner Styles */
+#banner{
+    min-height: 400px;
+    background-color: tomato;
+}
